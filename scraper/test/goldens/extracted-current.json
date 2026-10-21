@@ -1,0 +1,177 @@
+{
+  "humanId": 0,
+  "name": "MEGA Jackpot Pro",
+  "prizeAmount": "137290997",
+  "events": [
+    {
+      "eventNumber": 1,
+      "kickoffTime": null,
+      "kickoffRaw": "Saturday 24/10/26 - 17:00",
+      "home": "England",
+      "away": "Coventry City",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 2,
+      "kickoffTime": null,
+      "kickoffRaw": "Saturday 24/10/26 - 19:00",
+      "home": "Italy",
+      "away": "SSC Napoli",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 3,
+      "kickoffTime": null,
+      "kickoffRaw": "Saturday 24/10/26 - 21:45",
+      "home": "France",
+      "away": "Racing Club De Lens",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 4,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 17:00",
+      "home": "England",
+      "away": "Crystal Palace",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 5,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 17:30",
+      "home": "Germany",
+      "away": "TSG Hoffenheim",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 6,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 18:00",
+      "home": "Denmark",
+      "away": "AC Horsens",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 7,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 18:15",
+      "home": "Spain",
+      "away": "RC Celta de Vigo",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 8,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 18:15",
+      "home": "Spain",
+      "away": "Albacete Balompie",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 9,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:00",
+      "home": "Norway",
+      "away": "Kristiansund BK",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 10,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:00",
+      "home": "Norway",
+      "away": "Lillestroem SK",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 11,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:00",
+      "home": "Turkey",
+      "away": "Ankara Keciorengucu",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 12,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:15",
+      "home": "France",
+      "away": "Angers SCO",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 13,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:30",
+      "home": "Poland",
+      "away": "Legia Warszawa",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 14,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 19:30",
+      "home": "England",
+      "away": "Sunderland AFC",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 15,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 20:00",
+      "home": "Denmark",
+      "away": "AGF Aarhus",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 16,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 20:00",
+      "home": "Cyprus",
+      "away": "AEL Limassol",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    },
+    {
+      "eventNumber": 17,
+      "kickoffTime": null,
+      "kickoffRaw": "Sunday 25/10/26 - 20:30",
+      "home": "Belgium",
+      "away": "KAA Gent",
+      "oddsHome": null,
+      "oddsDraw": null,
+      "oddsAway": null
+    }
+  ]
+}

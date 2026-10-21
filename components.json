@@ -1,0 +1,21 @@
+{
+	"$schema": "https://next.shadcn-svelte.com/schema.json",
+	"style": "vega",
+	"tailwind": {
+		"config": "",
+		"css": "src/routes/layout.css",
+		"baseColor": "neutral",
+		"cssVariables": true,
+		"prefix": ""
+	},
+	"aliases": {
+		"components": "$lib/components",
+		"utils": "$lib/utils",
+		"ui": "$lib/components/ui",
+		"lib": "$lib",
+		"hooks": "$lib/hooks"
+	},
+	"typescript": true,
+	"ts": true,
+	"iconLibrary": "lucide"
+}

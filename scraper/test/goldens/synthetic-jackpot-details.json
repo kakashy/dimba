@@ -1,0 +1,48 @@
+{
+  "jackpotId": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+  "jackpotHumanId": 1287,
+  "jackpotStatus": "Finished",
+  "finished": "2026-10-13T18:30:00.000Z",
+  "events": [
+    {
+      "eventNumber": 1,
+      "kickoffTime": "2026-10-10T17:00:00",
+      "competitorHome": "Gor Mahia",
+      "competitorAway": "AFC Leopards",
+      "resultPick": "1",
+      "score": "2:1"
+    },
+    {
+      "eventNumber": 2,
+      "kickoffTime": "2026-10-10T19:30:00",
+      "competitorHome": "Tusker FC",
+      "competitorAway": "KCB FC",
+      "resultPick": "X",
+      "score": "0:0"
+    },
+    {
+      "eventNumber": 3,
+      "kickoffTime": "2026-10-10T22:00:00",
+      "competitorHome": "Arsenal",
+      "competitorAway": "Chelsea",
+      "resultPick": "2",
+      "score": "1:3"
+    },
+    {
+      "eventNumber": 4,
+      "kickoffTime": "2026-10-11T15:00:00",
+      "competitorHome": "Liverpool",
+      "competitorAway": "Everton",
+      "resultPick": "1",
+      "score": "3:0"
+    },
+    {
+      "eventNumber": 5,
+      "kickoffTime": "2026-10-11T18:30:00",
+      "competitorHome": "Man City",
+      "competitorAway": "Tottenham",
+      "resultPick": null,
+      "score": null
+    }
+  ]
+}

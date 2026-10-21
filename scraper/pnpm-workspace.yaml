@@ -1,0 +1,8 @@
+# scraper is intentionally standalone: it is NOT a member of the repo-root
+# pnpm workspace. This file stops pnpm from walking up to the repo root.
+packages:
+  - '.'
+
+onlyBuiltDependencies:
+  - esbuild
+  - playwright

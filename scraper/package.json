@@ -1,0 +1,29 @@
+{
+	"name": "dimba-scraper",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"packageManager": "pnpm@10.26.1",
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"scrape": "tsx src/index.ts",
+		"capture": "tsx src/capture.ts",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"typecheck": "tsc --noEmit",
+		"build": "tsc -p tsconfig.build.json"
+	},
+	"dependencies": {
+		"dotenv": "^18.0.8",
+		"playwright": "1.64.0",
+		"tsx": "^4.21.0",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.14",
+		"typescript": "^5.9.3",
+		"vitest": "^4.1.8"
+	}
+}

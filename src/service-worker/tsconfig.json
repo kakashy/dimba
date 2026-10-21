@@ -1,0 +1,8 @@
+{
+	"extends": "$app/tsconfig/service-worker",
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"include": ["service-worker.ts", "types.d.ts"],
+	"exclude": []
+}

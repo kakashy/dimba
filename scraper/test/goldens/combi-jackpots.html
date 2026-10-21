@@ -1,0 +1,144 @@
+<combi-jackpots active-section="::$resolve.activeSection"><!----><!----><!----><div ng-repeat="(sectionName, section) in $ctrl.sections" class="combijackpots-section combijackpots-section-multi events-content events-content-multijackpot" ng-if="$ctrl.activeSection === sectionName" ui-view="">
+    <events-list params="section.params"><help-alert help="$ctrl.marketsHelp" type="$ctrl.type"><div class="modal fade help-alert" id="helpAlert" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="helpAlertTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-help" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+            <span class="help-alert-title" translate="multijackpot_tutorial.title">ABOUT THE MEGA JACKPOT PRO</span>
+                <span class="help-alert-close" ng-click="$ctrl.close();"></span>
+            </div>
+
+            <div class="modal-body modal-body-help">
+                <div id="help-alert-main" class="modal-guts display-type-non-collapsible" ng-class="$ctrl.getDisplayType($ctrl.help.length)">
+                    <!-- markets help -->
+                    <!---->
+
+                    <!-- multijcakpot tutorial -->
+                    <!----><div class="text-content jengabet-tutorial-container" ng-if="$ctrl.type === 'multijackpot'">
+                        <!----><div class="question" ng-include="$ctrl.customHelpTemplate"><div class="unslider"><div class="multijackpot-tutorial unslider-horizontal" style="position: relative; overflow: hidden;">
+    <ul class="unslider-wrap unslider-carousel" style="width: 500%; left: 0%;">
+        <li class="unslider-active" style="width: 20%;">
+            <div class="slider-wrap">
+                <div class="tutorial-image step-0">
+                    <sp-webp alt="MEGA Jackpot Pro" src="/img/select-predictions.png"><picture><source type="image/webp" ng-srcset="/img/select-predictions.webp?v4.2.3.4" srcset="/img/select-predictions.webp?v4.2.3.4"><source type="image/png" ng-srcset="/img/select-predictions.png?v4.2.3.4" srcset="/img/select-predictions.png?v4.2.3.4"><img alt="multijackpot_tutorial.step_0.image_alt" ng-src="/img/select-predictions.png?v4.2.3.4" src="/img/select-predictions.png?v4.2.3.4"></picture></sp-webp>
+                </div>
+                <h3 class="tutorial-description" translate="multijackpot_tutorial.step_0.heading">Select your predictions</h3>
+                <p class="tutorial-description" translate="multijackpot_tutorial.step_0.content" translate-value-min-selections="13" translate-value-max-selections="17">Pick a minimum of 13 selections and up to 17 to play a MEGA Jackpot Pro.</p>
+            </div>
+        </li>
+        <li style="width: 20%;">
+            <div class="slider-wrap">
+                <div class="tutorial-image step-1">
+                    <sp-webp alt="Bet Builder" src="/img/jackpots.png"><picture><source type="image/webp" ng-srcset="/img/jackpots.webp?v4.2.3.4" srcset="/img/jackpots.webp?v4.2.3.4"><source type="image/png" ng-srcset="/img/jackpots.png?v4.2.3.4" srcset="/img/jackpots.png?v4.2.3.4"><img alt="multijackpot_tutorial.step_1.image_alt" ng-src="/img/jackpots.png?v4.2.3.4" src="/img/jackpots.png?v4.2.3.4"></picture></sp-webp>
+                </div>
+                <h3 class="tutorial-description" translate="multijackpot_tutorial.step_1.heading" translate-value-max-selections="17" translate-value-num-jackpots="5" translate-interpolation="messageformat">17 games, 5 Mega jackpots Pro</h3>
+                <p class="tutorial-description" translate="multijackpot_tutorial.step_1.content">Depending of the number of selections that you pick, you will opt for the many available MEGA Jackpots Pro.</p>
+            </div>
+        </li>
+        <li style="width: 20%;">
+            <div class="slider-wrap">
+                <div class="tutorial-image step-2">
+                    <sp-webp alt="Jackpot" src="/img/increase-chance.png"><picture><source type="image/webp" ng-srcset="/img/increase-chance.webp?v4.2.3.4" srcset="/img/increase-chance.webp?v4.2.3.4"><source type="image/png" ng-srcset="/img/increase-chance.png?v4.2.3.4" srcset="/img/increase-chance.png?v4.2.3.4"><img alt="multijackpot_tutorial.step_2.image_alt" ng-src="/img/increase-chance.png?v4.2.3.4" src="/img/increase-chance.png?v4.2.3.4"></picture></sp-webp>
+                </div>
+                <h3 class="tutorial-description" translate="multijackpot_tutorial.step_2.heading">Increase your chances of winning</h3>
+                <p class="tutorial-description" translate="multijackpot_tutorial.step_2.content">You can add multiple combinations of doubles and triples.</p>
+            </div>
+        </li>
+        <li style="width: 20%;">
+            <div class="slider-wrap">
+                <div class="tutorial-image step-3">
+                    <sp-webp alt="MEGA Jackpot Pro" src="/img/try-luck.png"><picture><source type="image/webp" ng-srcset="/img/try-luck.webp?v4.2.3.4" srcset="/img/try-luck.webp?v4.2.3.4"><source type="image/png" ng-srcset="/img/try-luck.png?v4.2.3.4" srcset="/img/try-luck.png?v4.2.3.4"><img alt="multijackpot_tutorial.step_3.image_alt" ng-src="/img/try-luck.png?v4.2.3.4" src="/img/try-luck.png?v4.2.3.4"></picture></sp-webp>
+                </div>
+                <h3 class="tutorial-description" translate="multijackpot_tutorial.step_3.heading">Try your luck</h3>
+                <p class="tutorial-description" translate="multijackpot_tutorial.step_3.content">You can quickly pick random selections with the Quick Pick.</p>
+            </div>
+        </li>
+        <li style="width: 20%;">
+            <div class="slider-wrap">
+                <div class="tutorial-image step-4">
+                    <sp-webp alt="MEGA Jackpot Pro" src="/img/refine-luck-en.png"><picture><source type="image/webp" ng-srcset="/img/refine-luck-en.webp?v4.2.3.4" srcset="/img/refine-luck-en.webp?v4.2.3.4"><source type="image/png" ng-srcset="/img/refine-luck-en.png?v4.2.3.4" srcset="/img/refine-luck-en.png?v4.2.3.4"><img alt="multijackpot_tutorial.step_4.image_alt" ng-src="/img/refine-luck-en.png?v4.2.3.4" src="/img/refine-luck-en.png?v4.2.3.4"></picture></sp-webp>
+                </div>
+                <h3 class="tutorial-description" translate="multijackpot_tutorial.step_4.heading">Refine your luck</h3>
+                <p class="tutorial-description" translate="multijackpot_tutorial.step_4.content">With Quick Pick you can also customize the numbers of doubles and triples to be randomly selected for you.</p>
+            </div>
+        </li>
+    </ul>
+</div><a class="unslider-arrow next"></a><a class="unslider-arrow prev"></a><nav class="unslider-nav"><ol><li data-slide="0" class="unslider-active">1</li><li data-slide="1">2</li><li data-slide="2">3</li><li data-slide="3">4</li><li data-slide="4">5</li></ol></nav></div>
+</div>
+                    </div><!---->
+
+                    <div class="shadow-bottom" ng-class="{'shadow-bottom-visible' : $ctrl.hasScroll('#help-alert-main') || $ctrl.hasScroll('#help-alert-main li.unslider-active div.slider-wrap')}"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div></help-alert>
+<!----><section class="ng-animate-enabled ng-app-fade-animation event-list event-list-multijackpot event-list-sport-1 event-list-section-multijackpot event-list-count-0" data-jackpot-status="true" ng-animate-children="true" ng-if="$ctrl.events !== undefined &amp;&amp; !$ctrl.isLoadingSkeleton() &amp;&amp; $ctrl.params.section !== 'goalrush'" data-qa="events-list">
+  <!----><div class="event-list-header" ng-if="$ctrl.showHeader">
+    <div class="event-list-title">
+      <!----><div ng-if="!$ctrl.params['externalEvents']">
+        <div class="event-icon event-show-sport">
+          <i class="sport-icon icon-multijackpot-1"></i>
+        </div>
+      </div><!---->
+
+      <div class="event-text event-list-name">
+        <!----><span ng-hide="$ctrl.params['externalEvents']" ng-repeat="titlePart in $ctrl.title">
+          <!---->
+          <!----><span ng-if="!$ctrl.showNewTitle()" translate="multijackpot.title.games" translate-values="" class="">MEGA Jackpot Pro Games</span><!---->
+        </span><!---->
+        <span ng-show="$ctrl.params['externalEvents']" class="ng-hide"><span translate="multijackpot">multijackpot</span></span>
+      </div>
+
+      <div>
+        <div class="event-icon event-show-markets-switch" ng-click="$ctrl.showMarketsPreferences()">
+          <i class="sport-icon tool-icon markets-switch"></i>
+        </div>
+        <div class="event-icon event-show-print" ng-click="$ctrl.print($event)">
+          <i class="sport-icon tool-icon icon-print"></i>
+        </div>
+        <div class="event-icon event-show-cup" ng-click="$ctrl.onShowLeaguesClick()">
+          <i class="sport-icon tool-icon icon-cup icon-active" ng-class="{'icon-active': $ctrl.showLeagues, 'icon-disabled': $ctrl.orderBy === 'leagues'}"></i>
+        </div>
+        <div class="event-icon event-show-help mj-search" data-toggle="tooltip" data-placement="top" ng-class="{'mj-search': $ctrl.type === 'multijackpot'}" data-original-title="" title="" aria-describedby="tooltip950028">
+          <i class="sport-icon tool-icon icon-help" ng-click="$ctrl.showNewHelp('#helpAlert', $ctrl.type)"></i>
+        </div><div class="tooltip fade top in" role="tooltip" id="tooltip950028" style="top: -41px; left: 868.4px; display: block;"><div class="tooltip-arrow" style="left: 50%;"></div><div class="tooltip-inner">17 games, 5 jackpots! Discover more</div></div>
+      </div>
+    </div>
+    <div class="event-list-upcoming-days" data-qa="common-event-list-upcoming-days">
+      <!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="all" translate-default="All" class="active">All</div><!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="today" translate-default="Today">Today</div><!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="thursday" translate-default="Thursday">Thursday</div><!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="friday" translate-default="Friday">Friday</div><!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="saturday" translate-default="Saturday">Saturday</div><!----><div ng-repeat="i in [-1, 0, 1, 2, 3, 4]" ng-click="$ctrl.filterByDay(i)" ng-class="{'active': $ctrl.upcomingDayFilter === i}" translate="sunday" translate-default="Sunday">Sunday</div><!---->
+    </div>
+    <!---->
+  </div><!---->
+
+  <div class="list-events">
+    <!---->
+
+    <!---->
+
+    <!---->
+
+    <!---->
+    <!----><div class="event-row-container" ng-if="$ctrl.type === 'multijackpot'">
+      <multi-jackpot ignore-menu-section-setup="$ctrl.params.isCombiJackpots"><iframe ng-src="https://jackpot-widget.ke.sportpesa.com/?timeZone=Africa%2FNairobi&amp;locale=en-ke" width="100%" height="1599" id="multijackpot-iframe" src="https://jackpot-widget.ke.sportpesa.com/?timeZone=Africa%2FNairobi&amp;locale=en-ke">
+  <p translate="your_browser_does_not_support_iframes">Your browser does not support iframes</p>
+</iframe>
+</multi-jackpot>
+    </div><!---->
+    <!---->
+    <!---->
+    <!---->
+
+    <!---->
+
+    <!---->
+  </div>
+</section><!---->
+
+<!---->
+
+<!---->
+</events-list>
+</div><!----><!----><!----><!---->
+</combi-jackpots>
