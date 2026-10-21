@@ -19,17 +19,17 @@
 	};
 </script>
 
-<div class="flex items-center justify-between gap-3 px-3 py-2.5 rounded-lg border border-border bg-card">
-	<div class="flex-1 text-sm font-bold tabular-nums">{String(num).padStart(2, '0')}. {home} vs {away}</div>
-	<div class="flex items-center gap-1 text-xs font-mono">
+<div class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl border border-border bg-card">
+	<div class="flex-1 text-base font-bold tabular-nums">{String(num).padStart(2, '0')}. {home} vs {away}</div>
+	<div class="flex items-center gap-1.5 text-sm font-mono">
 		{#each Object.entries(picks) as [label, pick] (label)}
-			<span class={cn('px-1.5 rounded', actual === null ? 'bg-muted' : pick === actual ? 'bg-success/20' : 'bg-destructive/20')}>
+			<span class={cn('px-2 py-1 rounded-lg', actual === null ? 'bg-muted' : pick === actual ? 'bg-success/20' : 'bg-destructive/20')}>
 				{label}: <span class={pickClass(pick)}>{pickLabel(pick)}</span>
 			</span>
 		{/each}
 	</div>
-	<div class="w-10 text-center">
-		{#if actual === null}<span class="text-muted-foreground text-xs">?</span>
-		{:else}<span class={cn('font-bold text-xs', score ? 'text-success-foreground' : 'text-foreground')}>{actual}</span>{/if}
+	<div class="w-12 text-center">
+		{#if actual === null}<span class="text-muted-foreground text-sm">—</span>
+		{:else}<span class={cn('font-bold text-sm', score ? 'text-success-foreground' : 'text-foreground')}>{actual}</span>{/if}
 	</div>
 </div>

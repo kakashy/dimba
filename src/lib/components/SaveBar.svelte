@@ -22,7 +22,7 @@
 				{status === 'synced' ? 'Synced' : status === 'saving' ? 'Saving…' : status === 'offline' ? 'Offline' : 'Sync failed'}
 			</span>
 		</div>
-		<button class="w-full rounded-xl bg-primary text-primary-foreground font-bold py-4 text-lg shadow-lg active:scale-95 disabled:opacity-50 disabled:pointer-events-none" disabled={saving} onclick={onSave}>
+		<button class="w-full min-h-[56px] rounded-xl bg-primary text-primary-foreground font-bold py-4 text-xl shadow-lg active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none" disabled={saving} onclick={onSave}>
 			{saving ? 'Saving…' : 'Save'}
 		</button>
 	</div>

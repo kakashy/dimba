@@ -2,9 +2,10 @@
 	import { db } from '#lib/db/local';
 	import { resolve } from '$app/paths';
 	import { SET_LABELS, type FixtureEvent, type Prediction } from '#lib/types';
-	import ScoreChip from '#lib/components/ScoreChip.svelte';
-	import ResultRow from '#lib/components/ResultRow.svelte';
-	import BottomNav from '#lib/components/BottomNav.svelte';
+import ScoreChip from '#lib/components/ScoreChip.svelte';
+import ResultRow from '#lib/components/ResultRow.svelte';
+import BottomNav from '#lib/components/BottomNav.svelte';
+import { BookOpen } from '@lucide/svelte';
 
 	let refresh = $state(0);
 	const bump = () => (refresh += 1);
@@ -59,30 +60,30 @@
 <div class="flex min-h-screen flex-col bg-background text-foreground">
 	<header class="border-b border-border bg-background/80 backdrop-blur sticky top-0 z-30 px-4 py-4">
 		<h1 class="font-black tracking-tight text-2xl md:text-3xl">Results</h1>
-		<p class="text-sm text-muted-foreground">Every set you saved, scored after Tuesday’s results.</p>
+		<p class="text-base text-muted-foreground">Every set you saved, scored after Tuesday’s results.</p>
 	</header>
 
 	<main class="flex-1 w-full max-w-3xl mx-auto px-4 pb-24">
 		{#if rounds.length === 0}
-			<div class="mt-20 flex flex-col items-center justify-center text-center rounded-2xl border border-border bg-card p-10">
-				<span class="text-6xl mb-3">📜</span>
+			<div class="mt-24 flex flex-col items-center justify-center text-center rounded-2xl border border-border bg-card p-10">
+				<BookOpen class="w-20 h-20 text-lime mb-4" />
 				<h2 class="font-bold text-xl">No past rounds yet</h2>
-				<p class="text-sm text-muted-foreground max-w-xs">Save predictions for a round and we’ll score it here after SportPesa validates results on Tuesday.</p>
-				<a href={resolve('/')} class="mt-5 rounded-xl bg-primary text-primary-foreground px-6 py-3 font-bold text-lg shadow-lg">Go to fixtures</a>
+				<p class="text-base text-muted-foreground max-w-xs">Save predictions for a round and we’ll score it here after SportPesa validates results on Tuesday.</p>
+				<a href={resolve('/')} class="mt-6 min-h-[56px] rounded-xl bg-primary text-primary-foreground font-bold py-4 text-xl shadow-lg">Go to fixtures</a>
 			</div>
 		{:else}
 			<div class="space-y-3">
 				{#each rounds as round (round.id)}
-					<div class="card p-4">
-						<div class="flex items-center justify-between gap-3 mb-3">
+					<div class="card p-6 gap-3">
+						<div class="flex items-center justify-between gap-3 mb-4">
 							<div>
-								<div class="font-bold text-lg">{round.name ?? 'MEGA Jackpot Pro'}</div>
-								<div class="text-xs text-muted-foreground">
+								<div class="font-bold text-xl">{round.name ?? 'MEGA Jackpot Pro'}</div>
+								<div class="text-sm text-muted-foreground">
 									#{round.humanId ?? '—'} · {round.finishedAt ? new Date(round.finishedAt).toLocaleDateString('en-KE') : '—'}
 								</div>
 							</div>
 							<button
-								class="rounded-xl border border-border px-3 py-1.5 text-sm font-semibold transition-colors hover:bg-muted"
+								class="rounded-xl border border-border px-4 py-2.5 text-base font-semibold transition-colors hover:bg-muted min-h-[48px]"
 								onclick={() => toggle(round.id)}>
 								{expanded.has(round.id) ? 'Hide results' : 'Show results'}
 							</button>
