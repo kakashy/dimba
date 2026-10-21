@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<!-- Green background rect -->
 	<rect width="512" height="512" rx="112" fill="#0B5D3B" />
-	<path fill="#ffffff" d="M 174 136 h 112 a 108 108 0 0 1 0 240 h -112 z" />
+	<!-- White stylized "D" monogram for Dimba, representing the sports prediction focus -->
+	<path fill="#ffffff" d="M 256 80 c 0-32 24-56 56-56 h 88 a 56 56 0 0 1 56 56 v 88 a 56 56 0 0 1-56 56 h -88 a 56 56 0 0 1-56-56 v -88 z "/>
+	<!-- Lime accent accent -->
+	<path fill="#A3E447" d="M 256 256 h -80 v -40 h 80 v 40 z "/>
 </svg>
