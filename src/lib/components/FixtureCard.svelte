@@ -17,22 +17,22 @@
 	const resultLabel = event.resultPick ? PICK_LABEL[event.resultPick] : null;
 </script>
 
-<div class="card p-6 gap-4">
+<div class="card p-5 gap-4">
 	<div class="flex items-center gap-3">
 		<span class="font-mono font-semibold text-sm text-foreground">{String(event.eventNumber).padStart(2, '0')}</span>
-		<span class="flex-1 text-base tabular-nums text-foreground">{formatKickoff(event.kickoffTime)}</span>
-		<span class={cn('font-bold text-sm', resultLabel ? 'text-success-foreground' : 'text-muted-foreground')}>
+		<span class="flex-1 text-sm tabular-nums text-foreground">{formatKickoff(event.kickoffTime)}</span>
+		<span class={cn('font-bold text-xs', resultLabel ? 'text-success-foreground' : 'text-muted-foreground')}>
 			{resultLabel ?? '—'}
 		</span>
 	</div>
-	<div class="grid grid-cols-2 gap-2 text-2xl font-bold text-foreground">
+	<div class="grid grid-cols-2 gap-2 text-lg font-bold text-foreground">
 		<span>{event.home}</span>
 		<span>{event.away}</span>
 	</div>
 	<div class="flex gap-2">
-		{#if event.oddsHome}<span class="rounded-xl px-3 py-1 text-sm font-bold bg-muted">{event.home.slice(0, 3)} {event.oddsHome}</span>{/if}
-		{#if event.oddsDraw}<span class="rounded-xl px-3 py-1 text-sm font-bold bg-muted">X {event.oddsDraw}</span>{/if}
-		{#if event.oddsAway}<span class="rounded-xl px-3 py-1 text-sm font-bold bg-muted">{event.away.slice(0, 3)} {event.oddsAway}</span>{/if}
+		{#if event.oddsHome}<span class="rounded-lg px-3 py-1 text-xs font-bold bg-secondary">{event.home.slice(0, 3)} {event.oddsHome}</span>{/if}
+		{#if event.oddsDraw}<span class="rounded-lg px-3 py-1 text-xs font-bold bg-secondary">X {event.oddsDraw}</span>{/if}
+		{#if event.oddsAway}<span class="rounded-lg px-3 py-1 text-xs font-bold bg-secondary">{event.away.slice(0, 3)} {event.oddsAway}</span>{/if}
 	</div>
 	<div class="grid grid-cols-3 gap-2">
 		<PickButton value="1" selected={pick === '1'} disabled={disabled} onpick={onpick} />
